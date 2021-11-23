@@ -8,7 +8,7 @@ module.exports = {
   mode: 'production',
   output: {
     path: resolve(__dirname, '..', 'build'),
-    filename: 'scripts/[name].[chunkhash:8].js',
+    filename: 'index.js',
     publicPath: '/',
   },
   module: {

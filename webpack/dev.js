@@ -1,5 +1,3 @@
-const { resolve } = require('path');
-
 const { config, plugins, getRules } = require('./common');
 
 module.exports = {
@@ -8,12 +6,10 @@ module.exports = {
   mode: 'development',
   devtool: 'source-map',
   output: {
-    path: resolve(__dirname, 'dist'),
-    filename: 'index_bundle.js',
-    publicPath: 'http://localhost:3001/',
+    publicPath: '/',
   },
   devServer: {
-    port: 3001,
+    port: 3000,
     historyApiFallback: true,
   },
   module: {

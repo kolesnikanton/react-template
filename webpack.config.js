@@ -2,7 +2,7 @@ const dev = require('./webpack/dev');
 const prod = require('./webpack/prod');
 
 module.exports = function config(env) {
-  if (env === 'prod') {
+  if (env.prod) {
     return prod;
   }
 
